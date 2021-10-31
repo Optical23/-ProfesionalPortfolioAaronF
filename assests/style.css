@@ -87,7 +87,6 @@ main {
     display: flex;
     flex-direction: column;
     column-gap: 20px;
-
 }
 .sectiontitle {
     padding-top: 10px;
@@ -103,26 +102,26 @@ main {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-items: baseline;
 }
 
 .workboxcontainer{
-    width: 75vw;
+    width: 86%;
     display: flex;
     flex-wrap: wrap;
-    display: inline-flex;
-    gap: 5px;
-    padding: 5%;
+    padding: 0 5%;
+    border-left: 3px solid var(--secondary-color);
 }
 
 .workboxlarge {
-    min-width: 100%;
+    min-width: 98%;
+    margin: 1%;
     height: 50vh;
     background-color: black;
 }
 
 .workboxsmall {
-    min-width: 49%;
+    margin: 1%;
+    min-width: 48%;
     height: 20vh;   
     background-color: black;
     align-self: flex-end;
