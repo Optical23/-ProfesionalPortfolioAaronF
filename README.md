@@ -9,3 +9,7 @@ I created a mockup of all the html and added the css of the general idea:
 I then just needed to make eveything look nicer and get padding and margins right
 ![Screenshot](/assests/screenshots/outlinePositioning1.PNG)
 ![Screenshot](/assests/screenshots/outlinePositioning2.PNG)
+
+The last part was to make the webpage responsive and I just changed font sizes and adjusted the width of work boxs and made the section title go over the section content
+which you will see here
+https://optical23.github.io/-ProfesionalPortfolioAaronF/
