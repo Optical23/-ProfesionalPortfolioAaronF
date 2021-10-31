@@ -90,16 +90,26 @@ main {
 }
 .sectiontitle {
     padding-top: 15px;
+    font-size: 2em;
+    min-width: 15%;
+    text-align: right;
 }
 
 .sectioncontent {
     line-height: 1.7;
+    font-size: 18px;
     display: flex;
     flex-wrap: wrap;
-    width: 86%;
+    width: 80%;
     padding: 0 5%;
     margin: 1%;
     border-left: 5px solid var(--secondary-color);
+}
+
+.sectioncontent a {
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--background-color);
 }
 /*About Me*/
 section{
@@ -109,25 +119,12 @@ section{
 }
 
 /*My work*/
-.mywork {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.workboxcontainer{
-    width: 86%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 5%;
-    border-left: 3px solid var(--secondary-color);
-}
-
 .workboxlarge {
     min-width: 98%;
     margin: 1%;
     height: 50vh;
-    background-color: black;
+    background-image: url('./images/hero-bg.jpg');
+    border: 5px solid var(--secondary-color);
 }
 
 .workboxsmall {
@@ -135,10 +132,26 @@ section{
     min-width: 48%;
     height: 20vh;   
     background-color: black;
-    align-self: flex-end;
-
-
+    border: 5px solid var(--secondary-color);
+    font-size: 0.8vw;
 }
+
+.subtitle{
+    width: 30%;
+    height: 20%;
+    background-color: var(--secondary-color);
+    z-index: 5;
+    position: relative;
+    top: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15px;
+    line-height: 1;
+}
+.subtitle h1{
+    width: 100%;
+}
+
 /*Contact*/
 ul {
     display: flex;
@@ -150,6 +163,26 @@ ul {
 
 ul li a {
     margin: 0 30px;
-    font-weight: lighter;
-    font-size: 1.55vw;
+    font-weight: normal;
+}
+
+/*Media queries*/
+@media screen and (max-width: 1155px){
+    .sectiontitle{
+        width:100%;
+        text-align: center;
+    }
+    .sectioncontent{
+        border-left: none;
+        width: 100%;
+        border-top: 5px solid var(--secondary-color);
+        padding-top: 10px;
+        margin: 10px 5%;
+    }
+}
+@media screen and (max-width: 980px) {
+    .workboxsmall {
+        width: 100%;
+        font-size: 18px;
+    }
 }
